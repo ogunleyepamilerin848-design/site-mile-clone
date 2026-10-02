@@ -1,0 +1,5196 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+
+        background-color:#0B3911 ;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+    width: 78%;
+
+    height: 60px;
+
+    margin-left: 120px;
+padding-right: 3px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background:
+        linear-gradient(
+            90deg,
+            #12642b,
+            #15822d
+        );
+
+    border-radius: 40px;
+margin-top: 10px;
+position: fixed;
+z-index: 1000;
+   
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+/* 
+    white-space: nowrap; */
+}
+
+.logo-white {
+    color: white;
+}
+
+.logo-yellow {
+    color: #d9ff16;
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    height: 100%;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: white;
+}
+
+
+/* .nav-links a {
+
+    transition: 0.2s ease;
+
+} */
+
+
+
+
+.nav-dropdown {
+    position: relative;
+    list-style: none;
+}
+
+.services-menu{
+    width: 270px;
+    height: 800px;
+    background-color: rgb(236, 231, 231);
+    margin-top: 20px;
+visibility: hidden;
+    position: absolute;
+    text-align: start;
+    border-radius: 25px;
+  right: 16px;
+
+
+}
+.services-menu a{
+    
+    color: black;
+    font-size: 16px;
+    ;
+line-height: 1.7;
+padding: 5px 29px;
+display: block;
+text-decoration: black;
+   
+    
+}
+
+   
+
+.nav-dropdown:hover  .services-menu{
+     visibility: visible;
+}
+
+
+.nav-dropdown li:hover .services-menu{
+    display: block;
+}
+
+.arrow {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+
+    border-right: 1.5px solid white;
+    border-bottom: 1.5px solid white;
+
+    transform: rotate(45deg);
+    margin-left: 7px;
+    margin-bottom: 3px;
+}
+
+
+
+
+
+
+
+.quote-button {
+
+    background: #dfff16;
+    width: 120px;
+    height: 35px;
+    padding-top: 7px;
+    padding-left: 10px;
+    font-size: 15px;
+
+    color: #172006 !important;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 0 16px rgba(220, 255, 22, 0.25);
+
+}
+
+
+
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    padding-top: 38px;
+    
+
+}
+
+
+/* =========================================
+   SMALL LABEL
+========================================= */
+
+.hero-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 9px 17px;
+
+    border-radius: 30px;
+
+    background: rgba(93, 143, 23, 0.4);
+
+    border: 1px solid rgba(166, 222, 42, 0.55);
+
+    box-shadow:
+        0 0 14px rgba(177, 255, 20, 0.2);
+
+    color: #DDDF75;
+
+    font-size: 15px;
+margin-top: 70px;
+    font-weight: 800;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* GREEN/YELLOW DOT */
+
+.glow-dot {
+
+    width: 10px;
+
+    height: 10px;
+
+    background: #dfff16;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 7px #dfff16,
+        0 0 15px rgba(223, 255, 22, 0.8);
+
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.hero-content h1 {
+
+    margin-top: 23px;
+
+    color: white;
+
+    font-size: clamp(
+        50px,
+        5.7vw,
+        76px
+    );
+
+    line-height: 1.02;
+
+    font-weight: 700;
+
+    letter-spacing: -3px;
+
+}
+
+
+/* =========================================
+   YELLOW ITALIC TEXT
+========================================= */
+
+.hero-content h6 {
+
+    margin-top: 2px;
+
+    color: #B8EB08;
+font-family: "DM Serif Display", serif;
+    /* font-family: "Playfair Display", serif; */
+    
+/* 
+    font-size: clamp(
+        48px,
+        5.4vw,
+        70px
+    ); */
+
+    font-size: 70px;
+
+    line-height: 0.98;
+
+    font-style: italic;
+
+    font-weight: 700;
+
+    letter-spacing: -2px;
+
+    text-shadow:
+        0 0 12px rgba(221, 255, 25, 0.12);
+
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero-description {
+
+    margin-top: 45px;
+
+    color: #fafae2;
+
+    font-size: 23.2px;
+
+    font-weight: 500;
+
+    line-height: 1.65;
+
+      font-family: "Lato", sans-serif;
+
+}
+
+
+/* =========================================
+   BUTTON CONTAINER
+========================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.primary-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 270px;
+
+    height: 56px;
+
+    padding: 0 28px;
+
+    border-radius: 35px;
+
+    background: #B8EB08;
+
+    color: #263000;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 0 25px rgba(207, 255, 17, 0.25);
+
+    transition: 0.25s ease;
+
+}
+
+
+.primary-button:hover {
+
+    transform: translateY(-2px);
+
+    background: #ebff4f;
+
+}
+
+
+/* =========================================
+   SECONDARY BUTTON
+========================================= */
+
+.secondary-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 170px;
+
+    height: 56px;
+
+    padding: 0 28px;
+
+    border-radius: 35px;
+
+    border: 2px solid rgba(255, 255, 255, 0.75);
+
+    color: white;
+
+    background: transparent;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.25s ease;
+
+}
+
+
+.secondary-button:hover {
+
+    background: rgba(255,255,255,0.08);
+
+}
+
+
+/* =========================================
+   CHAT BUTTON
+========================================= */
+
+.chat-button {
+
+    position: fixed;
+
+    right: 28px;
+
+    bottom: 28px;
+
+    height: 47px;
+
+    padding: 0 19px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: #6fd20c;
+
+    color: white;
+
+    border-radius: 30px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.2);
+border: none;
+    z-index: 100;
+
+}
+
+
+
+.dot-div span{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    display: inline-block;
+    clip-path: circle();
+    animation: dot 2s linear infinite ;
+}
+
+
+.dot-div span:first-child{
+animation: dot   0.5s ;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+
+        width: 90%;
+
+    }
+
+    .nav-links {
+
+        gap: 17px;
+
+        font-size: 12px;
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 55px;
+
+    }
+
+    .hero-content h2 {
+
+        font-size: 52px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+
+        min-height: 100vh;
+
+        padding-top: 15px;
+
+    }
+
+
+    .navbar {
+
+        width: 92%;
+
+        height: 58px;
+
+        padding: 0 17px;
+
+    }
+
+
+    .logo {
+
+        font-size: 18px;
+
+    }
+
+
+    .nav-links a:not(.quote-button) {
+
+        display: none;
+
+    }
+
+
+    .nav-links {
+
+        gap: 0;
+
+    }
+
+
+    .quote-button {
+
+        padding: 9px 15px;
+
+        font-size: 10px;
+
+    }
+
+
+    .hero-content {
+
+        padding-top: 45px;
+
+    }
+
+
+    .hero-label {
+
+        font-size: 9px;
+
+        padding: 8px 12px;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 42px;
+
+        letter-spacing: -2px;
+
+        margin-top: 25px;
+
+    }
+
+
+    .hero-content h2 {
+
+        font-size: 40px;
+
+        letter-spacing: -1.5px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 14px;
+
+        margin-top: 35px;
+
+    }
+
+
+    .hero-description br {
+
+        display: none;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+
+    .primary-button,
+    .secondary-button {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+
+    .chat-button {
+
+        right: 15px;
+
+        bottom: 15px;
+
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+
+    .hero-content h1 {
+
+        font-size: 36px;
+
+    }
+
+    .hero-content h2 {
+
+        font-size: 34px;
+
+    }
+
+    .hero-label {
+
+        font-size: 8px;
+
+    }
+
+}
+
+/* =========================================
+   SECTION 2 - SHOWCASE
+========================================= */
+
+.showcase-section {
+
+    background: #0B3911;
+
+    padding: 25px 5% 0;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   FOUR PILLS
+========================================= */
+
+.showcase-pills {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.showcase-pill {
+
+    color: #f4f7ef;
+
+    background: #113A1E;
+
+    border: 1px solid rgba(170, 190, 170, 0.12);
+
+    border-radius: 30px;
+
+    padding: 11px 20px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.03),
+        0 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+/* =========================================
+   SHOWCASE IMAGE
+========================================= */
+
+.showcase-image-wrapper {
+
+    max-width: 1000px;
+
+    margin: 45px auto 0;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+/* GREEN GLOW BEHIND IMAGE */
+
+
+
+
+.showcase-image {
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    height: auto;
+
+    display: block;
+
+    position: relative;
+
+    z-index: 1;
+    background: #011A0A;
+
+}
+
+
+/* =========================================
+   SECTION 3
+========================================= */
+
+.agency-intro {
+
+    
+    background: #003914;
+
+
+    color: white;
+
+    padding: 55px 7% 85px;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.agency-intro-heading {
+
+    max-width: 850px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+
+}
+
+
+.agency-intro-heading h2 {
+
+    margin: 0;
+
+    color: #E6EF97;
+
+    font-family: "DM Sans", sans-serif;
+
+ font-size: 30px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+
+}
+
+
+
+.agency-stats {
+
+    max-width: 1050px;
+
+    margin: 45px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+/* EACH INDIVIDUAL BOX */
+
+.agency-stat {
+
+    min-height: 200px;
+
+    padding: 30px 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    background: #0B5B28;
+
+   
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* NUMBER */
+
+.agency-stat h3 {
+
+    margin: 0;
+
+    flex-shrink: 0;
+
+    color: #f4f7ef;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 60px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: -3px;
+
+}
+
+
+/* TEXT */
+
+.stat-content {
+
+    flex: 1;
+
+}
+
+
+.stat-content  {
+
+    display: block;
+
+    color: white;
+
+    font-size: 28px;
+
+    line-height: 1.25;
+
+    font-weight: 500;
+
+    font-family: "Lato", sans-serif;
+
+
+}
+
+/* =========================================
+   TRUSTED BY SECTION
+========================================= */
+
+.trusted-by {
+
+    background: #F7F6F0;
+
+    padding: 32px 20px 70px;
+
+    text-align: center;
+
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.trusted-by h4 {
+
+    margin: 0 auto 24px;
+
+    color: #706A65;
+
+    font-size: 18px;
+
+    line-height: 1.4;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================
+   PILLS
+========================================= */
+
+.trusted-pills {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    column-gap: 12px;
+
+    row-gap: 10px;
+
+}
+
+
+/* =========================================
+   INDIVIDUAL PILL
+========================================= */
+
+.trusted-pill {
+
+    padding: 10px 18px;
+
+    background: white;
+
+    border: 1px solid #e1e2da;
+
+    border-radius: 30px;
+
+    color: #0F5D34;
+
+    font-size: 15px;
+
+    line-height: 1;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.03);
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .trusted-by {
+
+        padding:
+            28px 15px 55px;
+
+    }
+
+
+    .trusted-by h4 {
+
+        font-size: 10px;
+
+        max-width: 500px;
+
+    }
+
+
+    .trusted-pills {
+
+        gap: 8px;
+
+    }
+
+
+    .trusted-pill {
+
+        padding: 9px 13px;
+
+        font-size: 10px;
+
+    }
+
+}
+
+/* =========================================
+   OUR WORDPRESS AGENCY SERVICES
+========================================= */
+
+.agency-services {
+
+    background: #F2EFE8;
+
+    padding: 90px 7% 100px;
+
+    color: #111b12;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.agency-services-heading {
+
+    text-align: center;
+
+    max-width: 850px;
+
+    margin: 0 auto 45px;
+
+}
+
+
+.agency-services-heading h2 {
+
+    margin: 0;
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    color: #101810;
+
+}
+
+
+.agency-services-heading p {
+
+    max-width: 720px;
+
+    margin: 18px auto 0;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #303930;
+
+}
+
+
+/* =========================================
+   SERVICES GRID
+========================================= */
+
+.services-grid {
+
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+/* =========================================
+   SERVICE CARD
+========================================= */
+
+.service-card {
+
+    min-height: 390px;
+
+    padding: 32px 30px 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #e9f08e;
+
+    border-radius: 19px;
+
+}
+
+.service-card:hover{
+    transform: translateY(5px);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.service-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    color: #101810;
+
+    font-size: 30px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.service-card h3 {
+
+    margin: 0;
+
+    max-width: 270px;
+
+    font-size: 25px;
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    letter-spacing: -0.8px;
+
+    color: #101810;
+
+}
+
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.service-card p {
+
+    margin: 20px 0 0;
+
+    max-width: 290px;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+
+    color: #273126;
+
+}
+
+
+/* =========================================
+   LEARN MORE
+========================================= */
+
+.learn-more {
+
+    width: fit-content;
+
+    margin-top: auto;
+
+    padding: 11px 18px;
+
+    border-radius: 30px;
+
+    background: #b9df37;
+
+    color: #18200e;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+}
+
+
+.learn-more:hover {
+
+    background: #a8d52b;
+
+}
+
+
+/* =========================================
+   CONSULTING SERVICE
+========================================= */
+
+.consulting-service {
+
+    max-width: 1120px;
+
+    margin: 18px auto 0;
+
+    padding: 34px 35px;
+
+    background: #e9f08e;
+
+    border-radius: 19px;
+
+}
+
+
+/* ICON */
+
+.consulting-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    color: #111a11;
+
+    font-size: 31px;
+
+    margin-bottom: 22px;
+
+}
+
+
+/* TITLE */
+
+.consulting-service h3 {
+
+    margin: 0;
+
+    font-size: 29px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    color: #111a11;
+
+}
+
+
+/* TEXT */
+
+.consulting-service p {
+
+    max-width: 1050px;
+
+    margin: 13px 0 22px;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #273126;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .services-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .agency-services {
+
+        padding:
+            65px 20px 75px;
+
+    }
+
+
+    .agency-services-heading h2 {
+
+        font-size: 38px;
+
+        letter-spacing: -1.5px;
+
+    }
+
+
+    .agency-services-heading p {
+
+        font-size: 14px;
+
+    }
+
+
+    .services-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .service-card {
+
+        min-height: 350px;
+
+    }
+
+
+    .consulting-service {
+
+        padding: 28px;
+
+    }
+
+
+    .consulting-service h3 {
+
+        font-size: 25px;
+
+    }
+
+}
+
+
+/* =========================================
+   WORDPRESS AGENCY PROCESS
+========================================= */
+
+.process-section {
+
+    background: #f7f7f3;
+
+    padding: 90px 5% 100px;
+
+    color: #111811;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.process-heading {
+
+    max-width: 850px;
+
+    margin: 0 auto 48px;
+
+    text-align: center;
+
+}
+
+
+.process-label {
+
+    margin: 0 0 12px;
+
+    color: #5f8f16;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+}
+
+
+.process-heading h2 {
+
+    margin: 0;
+
+    font-size: 48px;
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    font-weight: 800;
+
+    color: #111811;
+
+}
+
+
+.process-heading > p:not(.process-label) {
+
+    max-width: 720px;
+
+    margin: 17px auto 0;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #454d45;
+
+}
+
+
+/* =========================================
+   FIVE CARDS
+========================================= */
+
+.process-cards {
+
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 15px;
+
+}
+
+
+/* =========================================
+   INDIVIDUAL CARD
+========================================= */
+
+.process-card {
+
+    min-height: 310px;
+
+    padding: 22px 20px;
+
+    background: #e9efc9;
+
+    border: 1px solid #dfe5c4;
+
+    border-radius: 17px;
+
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.process-number {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 43px;
+
+    height: 30px;
+
+    margin-bottom: 24px;
+
+    border-radius: 20px;
+
+    background: #b9dc38;
+
+    color: #17200f;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.process-card h3 {
+
+    margin: 0;
+
+    font-size: 20px;
+
+    line-height: 1.12;
+
+    letter-spacing: -0.5px;
+
+    font-weight: 800;
+
+    color: #111811;
+
+}
+
+
+/* =========================================
+   CARD TEXT
+========================================= */
+
+.process-card p {
+
+    margin: 15px 0 0;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #414a40;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .process-cards {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 750px) {
+
+    .process-cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+    .process-section {
+
+        padding:
+            70px 20px 80px;
+
+    }
+
+
+    .process-heading h2 {
+
+        font-size: 38px;
+
+        letter-spacing: -1.5px;
+
+    }
+
+
+    .process-heading > p:not(.process-label) {
+
+        font-size: 14px;
+
+    }
+
+
+    .process-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .process-card {
+
+        min-height: auto;
+
+        padding: 25px;
+
+    }
+
+}
+
+
+/* =========================================
+   WORDPRESS DESIGN PACKAGES
+========================================= */
+
+.packages-section {
+
+    background: #f7f7f3;
+
+    padding: 90px 6% 100px;
+
+    color: #111811;
+
+}
+
+
+/* =========================================
+   INTRO AREA
+========================================= */
+
+.packages-intro {
+
+    max-width: 1120px;
+
+    margin: 0 auto 55px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.25fr 0.75fr;
+
+    gap: 65px;
+
+    align-items: center;
+
+}
+
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.packages-small-title {
+
+    margin: 0 0 12px;
+
+    color: #6b8f20;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+}
+
+
+.packages-intro-left h2 {
+
+    max-width: 620px;
+
+    margin: 0;
+
+    font-size: 48px;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    font-weight: 800;
+
+    color: #101810;
+
+}
+
+
+.packages-intro-left > p:not(.packages-small-title) {
+
+    max-width: 650px;
+
+    margin: 20px 0 0;
+
+    color: #3e463e;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.package-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+
+.package-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 46px;
+
+    padding: 0 22px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+}
+
+
+.dark-btn {
+
+    background: #071b0b;
+
+    color: white;
+
+}
+
+
+.outline-btn {
+
+    border: 1px solid #202820;
+
+    color: #172017;
+
+    background: transparent;
+
+}
+
+
+/* =========================================
+   RIGHT BENEFITS BOX
+========================================= */
+
+.packages-benefits {
+
+    padding: 28px 30px;
+
+    background: #e7ef8c;
+
+    border-radius: 18px;
+
+}
+
+
+.packages-benefits h3 {
+
+    margin: 0 0 20px;
+
+    font-size: 22px;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.6px;
+
+    color: #172016;
+
+}
+
+
+.packages-benefits ul {
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+
+}
+
+
+.packages-benefits li {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 11px;
+
+    margin-bottom: 15px;
+
+    color: #293329;
+
+    font-size: 12px;
+
+    line-height: 1.45;
+
+}
+
+
+.packages-benefits li:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.packages-benefits li span {
+
+    flex-shrink: 0;
+
+    width: 17px;
+
+    height: 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #101b10;
+
+    color: #e7ef8c;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+}
+
+
+/* =========================================
+   PRICING CARDS
+========================================= */
+
+.package-cards {
+
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.package-card {
+
+    position: relative;
+
+    min-height: 320px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #fbfbf8;
+
+    border: 1px solid #e1e2db;
+
+    border-radius: 18px;
+
+}
+
+
+/* =========================================
+   POPULAR CARD
+========================================= */
+
+.popular-package {
+
+    border: 1.5px solid #182218;
+
+    transform: translateY(-7px);
+
+}
+
+
+.popular-badge {
+
+    position: absolute;
+
+    top: -13px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    background: #123719;
+
+    color: #dce95e;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 0.7px;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.package-card h3 {
+
+    margin: 0;
+
+    font-size: 22px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    color: #111811;
+
+}
+
+
+.package-price {
+
+    margin-top: 12px;
+
+    font-size: 38px;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: -1.5px;
+
+    color: #111811;
+
+}
+
+
+.custom-price {
+
+    font-size: 38px;
+
+}
+
+
+.package-card p {
+
+    margin: 18px 0 0;
+
+    color: #4b534b;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+}
+
+
+.package-card-btn {
+
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 12px 15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: 1px solid #283128;
+
+    border-radius: 30px;
+
+    color: #182018;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+}
+
+
+.green-package-btn {
+
+    border-color: #acd238;
+
+    background: #b8dd39;
+
+}
+
+
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.packages-bottom-cta {
+
+    max-width: 1050px;
+
+    margin: 65px auto 0;
+
+    padding: 50px 30px;
+
+    text-align: center;
+
+    background: #f1f2ec;
+
+    border-radius: 20px;
+
+}
+
+
+.packages-bottom-cta h2 {
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-size: 29px;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+
+    color: #333b33;
+
+}
+
+
+.packages-bottom-cta p {
+
+    max-width: 600px;
+
+    margin: 14px auto 22px;
+
+    color: #626a61;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+
+.bottom-cta-btn {
+
+    display: inline-flex;
+
+    padding: 13px 22px;
+
+    border-radius: 30px;
+
+    background: #102113;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .packages-intro {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+
+    .package-cards {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .popular-package {
+
+        transform: none;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .packages-section {
+
+        padding:
+            65px 20px 75px;
+
+    }
+
+
+    .packages-intro-left h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .package-buttons {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .packages-benefits {
+
+        padding: 25px;
+
+    }
+
+
+    .package-card {
+
+        min-height: 300px;
+
+    }
+
+
+    .packages-bottom-cta {
+
+        padding: 38px 22px;
+
+    }
+
+}
+
+
+
+/* =========================================
+   PREMIUM WORDPRESS SERVICES
+========================================= */
+
+.premium-section {
+
+    width: 100%;
+
+    background: #f7f7f4;
+
+    padding: 75px 0 85px;
+
+}
+
+
+.premium-container {
+
+    width: 90%;
+
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.premium-intro {
+
+    width: 100%;
+
+    margin-bottom: 34px;
+
+}
+
+
+.premium-eyebrow {
+
+    margin: 0 0 12px;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    color: #454b45;
+
+}
+
+
+.premium-intro h2 {
+
+    width: 700px;
+
+    max-width: 100%;
+
+    margin: 0;
+
+    font-size: 46px;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.8px;
+
+    font-weight: 800;
+
+    color: #101610;
+
+}
+
+
+.premium-description {
+
+    width: 650px;
+
+    max-width: 100%;
+
+    margin: 18px 0 0;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    color: #555c54;
+
+}
+
+
+/* =========================================
+   SERVICES GRID
+========================================= */
+
+.premium-services-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 14px;
+
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.premium-service-card {
+
+    min-height: 255px;
+
+    padding: 24px 23px 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #ededE8;
+
+    border-radius: 16px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =========================================
+   ICON BOX
+========================================= */
+
+.premium-service-icon {
+
+    width: 44px;
+
+    height: 44px;
+
+    margin-bottom: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #dce66e;
+
+    color: #182018;
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================
+   CARD HEADING
+========================================= */
+
+.premium-service-card h3 {
+
+    margin: 0;
+
+    font-size: 20px;
+
+    line-height: 1.08;
+
+    letter-spacing: -0.5px;
+
+    font-weight: 800;
+
+    color: #111711;
+
+}
+
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.premium-service-card p {
+
+    margin: 14px 0 0;
+
+    font-size: 12.5px;
+
+    line-height: 1.55;
+
+    color: #5a6159;
+
+}
+
+
+/* =========================================
+   DESKTOP SPACING
+========================================= */
+
+@media (min-width: 1000px) {
+
+    .premium-services-grid {
+
+        column-gap: 16px;
+
+        row-gap: 15px;
+
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .premium-intro h2 {
+
+        font-size: 40px;
+
+    }
+
+
+    .premium-services-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 560px) {
+
+    .premium-section {
+
+        padding: 60px 0 70px;
+
+    }
+
+
+    .premium-container {
+
+        width: 92%;
+
+    }
+
+
+    .premium-intro {
+
+        margin-bottom: 28px;
+
+    }
+
+
+    .premium-intro h2 {
+
+        font-size: 34px;
+
+        line-height: 1.08;
+
+        letter-spacing: -1.2px;
+
+    }
+
+
+    .premium-description {
+
+        font-size: 13px;
+
+    }
+
+
+    .premium-services-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+    }
+
+
+    .premium-service-card {
+
+        min-height: auto;
+
+        padding: 23px;
+
+    }
+
+}
+
+
+
+/* =========================================
+   INDUSTRIES SECTION
+========================================= */
+
+.industries-section {
+
+    width: 100%;
+
+    background: #f7f7f4;
+
+    padding: 75px 0 85px;
+
+}
+
+
+.industries-container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================
+   CENTERED HEADING
+========================================= */
+
+.industries-heading {
+
+    text-align: center;
+
+    max-width: 760px;
+
+    margin: 0 auto 35px;
+
+}
+
+
+.industries-label {
+
+    margin: 0 0 10px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+
+    color: #555c55;
+
+}
+
+
+.industries-heading h2 {
+
+    margin: 0;
+
+    font-size: 44px;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.6px;
+
+    font-weight: 800;
+
+    color: #111711;
+
+}
+
+
+.industries-description {
+
+    max-width: 680px;
+
+    margin: 16px auto 0;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    color: #555d55;
+
+}
+
+
+/* =========================================
+   INDUSTRY LIST
+========================================= */
+
+.industries-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 9px 10px;
+
+}
+
+
+/* =========================================
+   SMALL INDUSTRY CONTAINERS
+========================================= */
+
+.industry-item {
+
+    min-height: 45px;
+
+    padding: 0 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    background: #f0f1eb;
+
+    border: 1px solid #e4e5df;
+
+    border-radius: 12px;
+
+    color: #222822;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .industries-list {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .industries-section {
+
+        padding: 60px 0 70px;
+
+    }
+
+
+    .industries-container {
+
+        width: 92%;
+
+    }
+
+
+    .industries-heading h2 {
+
+        font-size: 35px;
+
+        letter-spacing: -1.2px;
+
+    }
+
+
+    .industries-description {
+
+        font-size: 13px;
+
+    }
+
+
+    .industries-list {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 8px;
+
+    }
+
+
+    .industry-item {
+
+        min-height: 43px;
+
+        padding: 0 8px;
+
+        font-size: 10px;
+
+    }
+
+}
+
+/* =========================================
+   RECENT WORDPRESS PROJECTS
+========================================= */
+
+.projects-section {
+
+    width: 100%;
+
+    background: #f7f7f4;
+
+    padding: 80px 0 90px;
+
+}
+
+
+.projects-container {
+
+    width: 90%;
+
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.projects-heading {
+
+    max-width: 750px;
+
+    margin: 0 auto 38px;
+
+    text-align: center;
+
+}
+
+
+.projects-label {
+
+    display: inline-block;
+
+    margin: 0 0 11px;
+
+    padding: 6px 13px;
+
+    border-radius: 20px;
+
+    background: #e9ebdf;
+
+    color: #414841;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+}
+
+
+.projects-heading h2 {
+
+    margin: 0;
+
+    font-size: 44px;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.7px;
+
+    font-weight: 800;
+
+    color: #111711;
+
+}
+
+
+.projects-heading > p:last-child {
+
+    max-width: 650px;
+
+    margin: 15px auto 0;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #555d55;
+
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e7e8e1;
+
+    border-radius: 17px;
+
+}
+
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+.project-image {
+
+    width: 100%;
+
+    height: 190px;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+/*
+   These are temporary backgrounds.
+   Replace them with your actual images.
+*/
+
+.project-image-one {
+
+    background:
+        linear-gradient(
+            135deg,
+            #dce86e,
+            #8ba72d
+        );
+
+}
+
+
+.project-image-two {
+
+    background:
+        linear-gradient(
+            135deg,
+            #d8e3d4,
+            #7c9b73
+        );
+
+}
+
+
+.project-image-three {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e5e9c6,
+            #aebd58
+        );
+
+}
+
+
+/* =========================================
+   PROJECT CONTENT
+========================================= */
+
+.project-content {
+
+    padding: 23px 22px 25px;
+
+}
+
+
+.project-category {
+
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #647327;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+.project-content h3 {
+
+    margin: 0;
+
+    font-size: 21px;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.6px;
+
+    font-weight: 800;
+
+    color: #111711;
+
+}
+
+
+.project-content p {
+
+    margin: 13px 0 20px;
+
+    font-size: 12.5px;
+
+    line-height: 1.6;
+
+    color: #555d55;
+
+}
+
+
+.project-content a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #182318;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+}
+
+
+.project-content a span {
+
+    font-size: 15px;
+
+    transition: transform 0.2s ease;
+
+}
+
+
+.project-content a:hover span {
+
+    transform: translateX(4px);
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .projects-grid {
+
+        grid-template-columns:
+            1fr;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+    .projects-section {
+
+        padding: 60px 0 70px;
+
+    }
+
+
+    .projects-container {
+
+        width: 92%;
+
+    }
+
+
+    .projects-heading h2 {
+
+        font-size: 35px;
+
+        letter-spacing: -1.2px;
+
+    }
+
+
+    .projects-heading > p:last-child {
+
+        font-size: 12px;
+
+    }
+
+
+    .project-image {
+
+        height: 170px;
+
+    }
+
+}
+
+/* =========================================
+   TESTIMONIALS SECTION
+========================================= */
+
+.testimonials-section {
+
+    width: 100%;
+
+    background: #f7f7f4;
+
+    padding: 80px 0 90px;
+
+}
+
+
+.testimonials-container {
+
+    width: 90%;
+
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.testimonials-heading {
+
+    text-align: center;
+
+    max-width: 720px;
+
+    margin: 0 auto 40px;
+
+}
+
+
+.testimonials-label {
+
+    margin: 0 0 11px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: #555d55;
+
+}
+
+
+.testimonials-heading h2 {
+
+    margin: 0;
+
+    font-size: 44px;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.7px;
+
+    font-weight: 800;
+
+    color: #111711;
+
+}
+
+
+/* =========================================
+   TESTIMONIAL GRID
+========================================= */
+
+.testimonials-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+/* =========================================
+   TESTIMONIAL CARD
+========================================= */
+
+.testimonial-card {
+
+    min-height: 280px;
+
+    padding: 27px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #e7e8e1;
+
+    border-radius: 17px;
+
+}
+
+
+/* =========================================
+   STARS
+========================================= */
+
+.stars {
+
+    margin-bottom: 20px;
+
+    color: #b5d735;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   TESTIMONIAL TEXT
+========================================= */
+
+.testimonial-text {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    color: #303830;
+
+}
+
+
+/* =========================================
+   CLIENT
+========================================= */
+
+.client {
+
+    margin-top: auto;
+
+    padding-top: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+}
+
+
+/* =========================================
+   INITIALS
+========================================= */
+
+.client-initials {
+
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dfe876;
+
+    color: #182018;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+}
+
+
+/* =========================================
+   CLIENT INFO
+========================================= */
+
+.client-info h3 {
+
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    color: #171d17;
+
+}
+
+
+.client-info p {
+
+    margin: 4px 0 0;
+
+    font-size: 10px;
+
+    line-height: 1.3;
+
+    color: #687067;
+
+}
+
+
+/* =========================================
+   REVIEWS LINK
+========================================= */
+
+.reviews-link {
+
+    margin-top: 28px;
+
+    text-align: center;
+
+}
+
+
+.reviews-link a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #172017;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+}
+
+
+.reviews-link a span {
+
+    font-size: 15px;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .testimonials-grid {
+
+        grid-template-columns:
+            1fr;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+    .testimonials-section {
+
+        padding: 60px 0 70px;
+
+    }
+
+
+    .testimonials-container {
+
+        width: 92%;
+
+    }
+
+
+    .testimonials-heading h2 {
+
+        font-size: 35px;
+
+        letter-spacing: -1.2px;
+
+    }
+
+
+    .testimonial-card {
+
+        min-height: 250px;
+
+        padding: 24px;
+
+    }
+
+}
+
+/* =========================================
+   PROFESSIONAL WORDPRESS SEO AGENCY
+========================================= */
+
+.seo-agency-section {
+
+    width: 100%;
+
+    background: #ffffff;
+
+    padding: 70px 20px 120px;
+
+    box-sizing: border-box;
+
+}
+
+
+.seo-agency-container {
+
+    width: 100%;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.seo-agency-container h2 {
+
+    margin: 0;
+
+    font-size: 38px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+    color: #111111;
+
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.seo-agency-text {
+
+    margin: 17px auto 0;
+
+    max-width: 1100px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    font-weight: 400;
+
+    color: #555555;
+
+}
+
+
+.seo-agency-text a {
+
+    color: #b87575;
+
+    text-decoration: none;
+
+}
+
+
+.seo-agency-text a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.seo-agency-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 20px;
+
+    padding: 14px 32px;
+
+    min-width: 180px;
+
+    box-sizing: border-box;
+
+    border-radius: 30px;
+
+    background: #050505;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+
+    transition: 0.2s ease;
+
+}
+
+
+.seo-agency-button:hover {
+
+    background: #222222;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .seo-agency-section {
+
+        padding: 60px 18px 90px;
+
+    }
+
+
+    .seo-agency-container h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .seo-agency-text {
+
+        font-size: 13px;
+
+        line-height: 1.7;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .seo-agency-container h2 {
+
+        font-size: 27px;
+
+    }
+
+}
+
+/* =========================================
+   WORDPRESS EXPERTISE SECTION
+========================================= */
+
+.wordpress-expertise {
+
+    width: 100%;
+
+    background: #f7f7f4;
+
+    padding: 75px 0 80px;
+
+}
+
+
+.expertise-container {
+
+    width: 90%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    column-gap: 55px;
+
+}
+
+
+/* =========================================
+   EACH COLUMN
+========================================= */
+
+.expertise-item {
+
+    text-align: center;
+
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.expertise-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.expertise-item h2 {
+
+    max-width: 270px;
+
+    margin: 0 auto;
+
+    font-size: 19px;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.5px;
+
+    font-weight: 800;
+
+    color: #161b16;
+
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.expertise-item p {
+
+    max-width: 300px;
+
+    margin: 16px auto 0;
+
+    font-size: 11px;
+
+    line-height: 1.65;
+
+    color: #555c55;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+    .expertise-container {
+
+        grid-template-columns:
+            1fr;
+
+        row-gap: 50px;
+
+    }
+
+
+    .expertise-item p {
+
+        max-width: 450px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+    .wordpress-expertise {
+
+        padding: 60px 0 70px;
+
+    }
+
+
+    .expertise-container {
+
+        width: 92%;
+
+    }
+
+
+    .expertise-item h2 {
+
+        font-size: 20px;
+
+    }
+
+
+    .expertise-item p {
+
+        font-size: 12px;
+
+    }
+
+}
+
+/* =========================================
+   LANDING PAGE DESIGN SERVICES
+========================================= */
+
+.landing-services {
+
+    width: 100%;
+
+    min-height: 250px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    padding: 55px 20px;
+
+    background: #160d13;
+
+}
+
+
+.landing-services-content {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    text-align: center;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.landing-services-content h2 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 31px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    letter-spacing: -0.7px;
+
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.landing-services-content p {
+
+    margin: 12px auto 0;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.landing-services-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 16px;
+
+    padding: 12px 20px;
+
+    border-radius: 25px;
+
+    background: #17652b;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+
+    box-shadow: 0 0 12px rgba(40, 150, 60, 0.35);
+
+    transition: 0.2s ease;
+
+}
+
+
+.landing-services-button:hover {
+
+    background: #1d7834;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .landing-services {
+
+        min-height: 230px;
+
+        padding: 45px 18px;
+
+    }
+
+
+    .landing-services-content h2 {
+
+        font-size: 27px;
+
+    }
+
+
+    .landing-services-content p {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+
+/* =========================================
+   PREMIUM WORDPRESS THEMES CLUB
+========================================= */
+
+.themes-club {
+
+    width: 100%;
+
+    background: #ffffff;
+
+    padding: 55px 20px 0;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.themes-club-content {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+}
+
+
+.themes-club-content h2 {
+
+    margin: 0;
+
+    color: #a66f72;
+
+    font-size: 29px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+
+}
+
+
+.themes-club-content p {
+
+    margin: 9px 0 13px;
+
+    color: #555555;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.themes-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.theme-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 145px;
+
+    padding: 11px 20px;
+
+    border-radius: 30px;
+
+    background: #66865f;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =========================================
+   THEME PREVIEWS
+========================================= */
+
+.theme-previews {
+
+    position: relative;
+
+    width: 900px;
+
+    height: 260px;
+
+    margin: 48px auto 0;
+
+}
+
+
+/* =========================================
+   INDIVIDUAL PREVIEW
+========================================= */
+
+.theme-preview {
+
+    position: absolute;
+
+    bottom: 0;
+
+    width: 300px;
+
+    height: 205px;
+
+    background: #f4f4f1;
+
+    border: 1px solid #ddddda;
+
+    border-radius: 4px 4px 0 0;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* LEFT */
+
+.theme-preview-left {
+
+    left: 45px;
+
+    transform:
+        perspective(500px)
+        rotateY(8deg);
+
+}
+
+
+/* MIDDLE */
+
+.theme-preview-middle {
+
+    left: 300px;
+
+    height: 235px;
+
+    z-index: 3;
+
+}
+
+
+/* RIGHT */
+
+.theme-preview-right {
+
+    right: 45px;
+
+    transform:
+        perspective(500px)
+        rotateY(-8deg);
+
+}
+
+
+/* =========================================
+   FAKE WEBSITE CONTENT
+========================================= */
+
+.fake-browser {
+
+    height: 25px;
+
+    background: #e5e5df;
+
+    border-bottom: 1px solid #d4d4cf;
+
+}
+
+
+.fake-content {
+
+    width: 85%;
+
+    height: 130px;
+
+    margin: 22px auto 0;
+
+    background:
+
+        linear-gradient(
+            #d7d8d2 18px,
+            transparent 18px
+        ),
+
+        repeating-linear-gradient(
+            to bottom,
+            #eeeeea 0,
+            #eeeeea 24px,
+            #dcded8 25px
+        );
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .theme-previews {
+
+        width: 760px;
+
+    }
+
+    .theme-preview {
+
+        width: 255px;
+
+    }
+
+    .theme-preview-left {
+
+        left: 55px;
+
+    }
+
+    .theme-preview-middle {
+
+        left: 253px;
+
+    }
+
+    .theme-preview-right {
+
+        right: 55px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .themes-club {
+
+        padding-top: 45px;
+
+    }
+
+
+    .themes-club-content h2 {
+
+        font-size: 24px;
+
+    }
+
+
+    .themes-club-content p {
+
+        font-size: 12px;
+
+    }
+
+
+    .themes-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .theme-button {
+
+        width: 180px;
+
+    }
+
+
+    .theme-previews {
+
+        width: 650px;
+
+        height: 210px;
+
+        margin-left: 50%;
+
+        transform: translateX(-50%);
+
+        margin-top: 40px;
+
+    }
+
+
+    .theme-preview {
+
+        width: 210px;
+
+        height: 155px;
+
+    }
+
+
+    .theme-preview-middle {
+
+        left: 220px;
+
+        height: 180px;
+
+    }
+
+
+    .theme-preview-left {
+
+        left: 40px;
+
+    }
+
+
+    .theme-preview-right {
+
+        right: 40px;
+
+    }
+
+}
+
+
+/* =========================================
+   LATEST WORDPRESS ARTICLES
+========================================= */
+
+.latest-articles {
+    width: 100%;
+    background: #ffffff;
+    padding: 65px 20px 80px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.articles-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.articles-heading h2 {
+    margin: 0;
+    color: #a96f72;
+    font-size: 31px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.articles-heading p {
+    margin: 10px 0 0;
+    color: #111111;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   ARTICLE CONTAINER
+========================================= */
+
+.articles-container {
+    width: 100%;
+    max-width: 690px;
+
+    margin-left: 18%;
+    margin-right: auto;
+
+    display: flex;
+    gap: 25px;
+
+    align-items: flex-start;
+}
+
+
+/* =========================================
+   ARTICLE CARD
+========================================= */
+
+.article-card {
+    width: 325px;
+    flex: 0 0 325px;
+
+    border: 1px solid #e1e1e1;
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.article-card img {
+    display: block;
+
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.article-content {
+    padding: 17px 17px 25px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.article-title {
+    display: block;
+
+    color: #a96f72;
+
+    font-size: 18px;
+    line-height: 1.25;
+
+    font-weight: 500;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   AUTHOR
+========================================= */
+
+.article-author {
+    margin: 15px 0 0;
+
+    color: #111111;
+
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .articles-container {
+        margin-left: 8%;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 720px) {
+
+    .articles-container {
+        margin: 0 auto;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .article-card {
+        width: 100%;
+        max-width: 325px;
+        flex: none;
+    }
+
+}
+
+
+
+/* =========================================
+   WORDPRESS DEVELOPMENT AGENCY
+========================================= */
+
+.wp-development {
+
+    width: 100%;
+
+    background: #ffffff;
+
+    padding: 65px 25px 55px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+}
+
+
+.wp-development-content {
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+}
+
+
+.wp-development-content h2 {
+
+    margin: 0 0 15px;
+
+    color: #a94d68;
+
+    font-size: 40px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+}
+
+
+.wp-development-content p {
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    color: #252525;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+.wp-development-content p a {
+
+    color: #ad6676;
+
+    text-decoration: none;
+
+}
+
+
+.read-more-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 32px;
+
+    padding: 17px 37px;
+
+    border-radius: 50px;
+
+    background: #073b20;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+
+    transition: 0.2s ease;
+
+}
+
+
+.read-more-btn:hover {
+
+    background: #0b4d29;
+
+}
+
+
+/* =========================================
+   THEMES CLUB BANNER
+========================================= */
+
+.themes-club-banner {
+
+    width: 100%;
+
+    background: #8f003d;
+
+    padding: 58px 25px 65px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+}
+
+
+.themes-club-banner-content {
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+}
+
+
+.themes-club-banner p {
+
+    margin: 0 auto;
+
+    max-width: 1000px;
+
+    color: #ffffff;
+
+    font-size: 24px;
+
+    line-height: 1.45;
+
+    font-weight: 500;
+
+}
+
+
+.themes-club-banner p em {
+
+    font-style: italic;
+
+}
+
+
+/* =========================================
+   JOIN CLUB BUTTON
+========================================= */
+
+.join-club-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 28px;
+
+    padding: 16px 34px;
+
+    border-radius: 50px;
+
+    background: #d7ef19;
+
+    color: #172015;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+
+    transition: 0.2s ease;
+
+}
+
+
+.join-club-btn:hover {
+
+    background: #c8e20d;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .wp-development {
+
+        padding: 55px 20px 50px;
+
+    }
+
+
+    .wp-development-content h2 {
+
+        font-size: 31px;
+
+    }
+
+
+    .wp-development-content p {
+
+        font-size: 13px;
+
+    }
+
+
+    .themes-club-banner {
+
+        padding: 50px 20px 55px;
+
+    }
+
+
+    .themes-club-banner p {
+
+        font-size: 19px;
+
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .wp-development-content h2 {
+
+        font-size: 27px;
+
+    }
+
+
+    .themes-club-banner p {
+
+        font-size: 17px;
+
+    }
+
+}
+
+
+/* =========================================
+   FAQ SECTION
+========================================= */
+
+.faq-section {
+
+    width: 100%;
+
+    background: #F3F8EA;
+
+    padding: 80px 20px 90px;
+
+    box-sizing: border-box;
+
+}
+
+
+.faq-container {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================
+   FAQ HEADING
+========================================= */
+
+.faq-heading {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+
+.faq-small-title {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #a6546c;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+.faq-heading h2 {
+
+    margin: 0;
+
+    color: #171717;
+
+    font-size: 40px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+}
+
+
+.faq-heading p {
+
+    max-width: 720px;
+
+    margin: 17px auto 0;
+
+    color: #5b5b5b;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+.connection{
+    width: 85%;
+    background: none;
+    border: none;
+}
+
+.connection:focus   .agency{
+background-color: #CEEB7B;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.agency{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    color: #0A351D;
+    border-radius: 30px;
+
+
+}
+
+.agency  h1{
+    font-size: 18px;
+}
+
+.agency i{
+font-size: 5px;
+color: black;
+}
+
+
+.inner-agency{
+                width: 100%;
+            height: 23vh;
+        background-color: white; 
+       border-bottom-left-radius: 30px;
+       border-bottom-right-radius: 30px;
+        
+        display: none;
+
+        cursor: pointer;
+        
+}
+
+.inner-agency p{
+            font-size: 20px;
+        justify-content: start;
+        color: #0A351D;
+        padding-left: 0;
+        text-align: start;
+        padding: 20px;
+        
+} 
+
+.connection:focus .inner-agency{
+    display: block
+}
+
+/* =========================================
+   LOGO AREA
+========================================= */
+
+.footer-logo-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+}
+
+
+.footer-logo {
+
+    width: 105px;
+
+    height: auto;
+
+    margin-bottom: 25px;
+
+}
+
+
+.featured-link {
+
+    color: white;
+
+    font-size: 11px;
+
+    text-decoration: none;
+
+}
+
+
+.featured-link:hover {
+
+    color: #222222;
+
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+}
+
+
+.footer-column h3 {
+
+    margin: 0 0 20px;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+}
+
+
+.footer-column a {
+
+    margin-bottom: 11px;
+
+    color: white;
+
+    font-size: 18px;
+
+    line-height: 1.4;
+
+    text-decoration: none;
+
+}
+
+
+.footer-column a:hover {
+
+    color: #78965b;
+
+}
+
+
+.footer-phone {
+
+    margin: 7px 0 0;
+
+    color: #555555;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================
+   TRUST BADGES
+========================================= */
+
+.footer-trust {
+
+    width: 90%;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    padding: 25px 0;
+
+    border-top: 1px solid #eeeeee;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.footer-trust img {
+
+    max-width: 200pxpx;
+
+    max-height: 45px;
+
+    width: auto;
+align-items: center;
+    height: auto;
+
+    object-fit: contain;
+gap: 30px;
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+
+    width: 90%;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    padding: 20px 0 25px;
+
+    border-top: 1px solid #eeeeee;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+
+.footer-bottom p {
+
+    margin: 0;
+
+    color: white;
+
+    font-size: 10px;
+
+}
+
+
+.footer-bottom a {
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) { 
+
+    .footer-main {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 40px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+    .footer-main {
+
+        width: 86%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+/* 
+    .footer-trust {
+
+        width: 86%;
+
+        flex-wrap: wrap;
+        
+
+    } */
+
+
+    .footer-trust{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footer-trust img{
+        width: 100%;
+        align-items: center;
+        padding-left: 100px;
+    }
+
+
+    .footer-bottom {
+
+        width: 86%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+}
+
+
+.note{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+}
